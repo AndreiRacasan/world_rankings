@@ -1,0 +1,47 @@
+.heading {
+  display: flex;
+}
+
+.heading button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.heading_name,
+.heading_population {
+  flex: 1;
+  padding: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.heading_name {
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--bg-light);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow);
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
+}
+
+.row:hover {
+  transform: translateY(-0.25rem);
+}
+
+.name {
+  flex: 1;
+  text-align: left;
+}
+
+.population {
+  flex: 1;
+}
