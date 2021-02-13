@@ -7,6 +7,8 @@
   background-color: transparent;
   outline: none;
   cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .heading_name,
@@ -15,10 +17,22 @@
   padding: 1.5rem;
   color: var(--text-secondary);
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading_name {
   text-align: left;
+  justify-content: flex-start;
+}
+
+.heading_arrow {
+  color: var(--main-colour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
 }
 
 .row {

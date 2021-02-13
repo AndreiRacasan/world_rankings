@@ -9,7 +9,7 @@ export default function Home({ countries }) {
   return <Layout>
     
     <div className={styles.counts}>
-      Found {countries.length} countries.
+      Found {countries.length} countries
     </div>
 
     <Search placeholder="Filter by various criteria..." />
