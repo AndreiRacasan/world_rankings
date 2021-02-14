@@ -23,13 +23,16 @@ export default function Home({ countries }) {
 
 
   return <Layout>
-    
-    <div className={styles.counts}>
-      Found {countries.length} countries
+    <div className={styles.input_container}>
+      <div className={styles.counts}>
+        Found {countries.length} countries
+      </div>
+
+      <div className={styles.input}>
+       <Search placeholder="Filter by various criteria..." onChange={onInputChange} />
+      </div>
     </div>
-
-    <Search placeholder="Filter by various criteria..." onChange={onInputChange} />
-
+    
     <CountriesList countries={filteredCountries} />
 
   </Layout>;

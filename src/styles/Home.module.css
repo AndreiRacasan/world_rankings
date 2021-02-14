@@ -3,12 +3,12 @@
   color: var(--text-secondary);
 }
 
-.inputContainer {
+.input_container {
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 720px) {
-  .inputContainer {
+  .input_container {
     display: flex;
     justify-content: space-between;
   }
