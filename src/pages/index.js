@@ -1,20 +1,36 @@
 import Head from 'next/head'
-import CountriesList from '../comps/CountriesList/CountriesList';
+import {useState} from 'react'
+import CountriesList from '../comps/CountriesList/CountriesList'
 import Layout from '../comps/layout/Layout'
 import Search from '../comps/search/Search'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ countries }) {
   console.log(countries);
+
+  const [keyword, setKeyword] = useState('');
+
+  const filteredCountries = countries.filter(c => 
+    c.name.toLowerCase().includes(keyword) || 
+    c.region.toLowerCase().includes(keyword) || 
+    c.subregion.toLowerCase().includes(keyword));
+
+  const onInputChange = (e) => {
+    e.preventDefault();
+    
+    setKeyword(e.target.value.toLowerCase());
+  }
+
+
   return <Layout>
     
     <div className={styles.counts}>
       Found {countries.length} countries
     </div>
 
-    <Search placeholder="Filter by various criteria..." />
+    <Search placeholder="Filter by various criteria..." onChange={onInputChange} />
 
-    <CountriesList countries={countries} />
+    <CountriesList countries={filteredCountries} />
 
   </Layout>;
 };

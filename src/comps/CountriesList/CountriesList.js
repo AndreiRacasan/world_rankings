@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { KeyboardArrowDownRounded, KeyboardArrowUpRounded } from '@material-ui/icons';
 import { useState } from 'react';
 import styles from './CountriesList.module.css';
@@ -65,10 +66,13 @@ const CountriesList = ({countries}) => {
       </button>
     </div>
 
-    {orderedCountries.map(c => <div className={styles.row}>
+    {orderedCountries.map(c => (
+      <Link href={`/country/${c.alpha3Code}`} >
+      <div className={styles.row}>
       <div className={styles.name}>{c.name}</div>
       <div className={styles.population}>{c.population}</div>
-    </div>)}
+    </div>
+      </Link>))}
   </div>
 }
 
