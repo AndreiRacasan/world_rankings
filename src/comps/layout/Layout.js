@@ -23,7 +23,7 @@ const Layout = ({children, title = "World Rankings"}) => {
       </main>
 
       <footer className={styles.footer}>
-       <p>Footer</p>
+       <p>© Andrei Racasan 2021</p>
       </footer>
     </div>
   );

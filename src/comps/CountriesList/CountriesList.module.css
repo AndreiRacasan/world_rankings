@@ -52,6 +52,7 @@
   box-shadow: var(--box-shadow);
   font-weight: 500;
   transition: ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 .row:hover {

@@ -7,7 +7,7 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: var(--box-shadow);
-  background-color: var(--background-color-light);
+  background-color: var(--bg-light);
 }
 
 .overview_name {
@@ -33,11 +33,11 @@
 
 .overview_label {
   font-size: 14px;
-  color: var(--text-color-secondary);
+  color: var(--text-secondary);
 }
 
 .details_panel {
-  background-color: var(--background-color-light);
+  background-color: var(--bg-light);
   box-shadow: var(--box-shadow);
   border-radius: 8px;
 }
@@ -58,7 +58,7 @@
 }
 
 .details_panel_label {
-  color: var(--text-color-secondary);
+  color: var(--text-secondary);
 }
 
 .details_panel_borders {
@@ -81,7 +81,7 @@
 }
 
 .details_panel_borders_label {
-  color: var(--text-color-secondary);
+  color: var(--text-secondary);
   margin-bottom: 20px;
 }
 
