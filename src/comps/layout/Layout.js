@@ -15,7 +15,7 @@ const Layout = ({children, title = "World Rankings"}) => {
       <header className={styles.header}>
         <Link href="/">
           <h1>
-            <FontAwesomeIcon icon={faGlobeAmericas} /> World Rankings
+            <FontAwesomeIcon icon={faGlobeAmericas} className={styles.logo}/> World Rankings
           </h1>
         </Link>
       </header>
