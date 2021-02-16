@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './Layout.module.css';
 
 const Layout = ({children, title = "World Rankings"}) => {
@@ -15,7 +13,7 @@ const Layout = ({children, title = "World Rankings"}) => {
       <header className={styles.header}>
         <Link href="/">
           <h1>
-            <FontAwesomeIcon icon={faGlobeAmericas} className={styles.logo}/> World Rankings
+            World Rankings
           </h1>
         </Link>
       </header>
