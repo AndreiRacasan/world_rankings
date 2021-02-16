@@ -33,6 +33,10 @@ export default function Home({ countries }) {
       </div>
     </div>
     
+    <div className={styles.description}>
+        Click on the relevant column title to order the countries by name, population, area or gini.
+    </div>
+    
     <CountriesList countries={filteredCountries} />
 
   </Layout>;
