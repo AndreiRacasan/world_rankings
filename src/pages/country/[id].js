@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import Layout from "../../comps/Layout/Layout";
-import styles from "./Country.module.css";
+import { useEffect, useState } from 'react';
+import Layout from '../../comps/Layout/Layout';
+import styles from './Country.module.css';
 
 const getCountry = async (id) => {
   const res = await fetch(`https://restcountries.eu/rest/v2/alpha/${id}`);
