@@ -1,6 +1,6 @@
 # World Rankings
 
-Next.js app in the making...
+React application built with Next.js. Fetches and displays data about 250 countries and territories from the REST Countries API. Allows sorting by name, population, area or gini. Individual views available for each country. Deployed on Vercel.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
