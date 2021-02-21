@@ -8,6 +8,7 @@
   border-radius: 8px;
   box-shadow: var(--box-shadow);
   background-color: var(--bg-light);
+  border: 1px solid var(--text-colour);
 }
 
 .overview_name {
@@ -32,6 +33,7 @@
 }
 
 .overview_label {
+  margin-top: 0.5rem;
   font-size: 14px;
   color: var(--text-secondary);
 }
@@ -40,6 +42,7 @@
   background-color: var(--bg-light);
   box-shadow: var(--box-shadow);
   border-radius: 8px;
+  border: 1px solid var(--text-colour);
 }
 
 .details_panel_heading {
@@ -54,11 +57,12 @@
   justify-content: space-between;
 
   padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--text-colour);
 }
 
 .details_panel_label {
   color: var(--text-secondary);
+  margin-right: 1rem;
 }
 
 .details_panel_borders {

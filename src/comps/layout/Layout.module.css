@@ -24,5 +24,7 @@
 .footer {
   text-align: center;
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  color: #39a1b6;
 }

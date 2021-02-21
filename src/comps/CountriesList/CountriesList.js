@@ -84,8 +84,8 @@ const CountriesList = ({countries}) => {
         <img src={c.flag} alt={c.name} />
       </div>
       <div className={styles.name}>{c.name}</div>
-      <div className={styles.population}>{c.population}</div>
-      <div className={styles.area}>{c.area || 0}</div>
+      <div className={styles.population}>{new Intl.NumberFormat().format(c.population)}</div>
+      <div className={styles.area}>{new Intl.NumberFormat().format(c.area) || 0}</div>
       <div className={styles.gini}>{c.gini || 0}%</div>
     </div>
       </Link>))}

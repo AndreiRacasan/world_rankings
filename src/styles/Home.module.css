@@ -5,13 +5,15 @@
 
 .input_container {
   margin-bottom: 40px;
+  padding: 0 2rem;
 }
 
 .description {
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
+  color: #39a1b6;
   text-align: center;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -20,17 +22,8 @@
   display: inline-block;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 720px) {
   .input_container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .counts {
-    flex: 1;
-  }
-
-  .input {
-    flex: 2;
+    padding: 0 1rem !important;
   }
 }

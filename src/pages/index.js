@@ -24,10 +24,6 @@ export default function Home({ countries }) {
 
   return <Layout>
     <div className={styles.input_container}>
-      <div className={styles.counts}>
-        Fetched data from {countries.length} countries
-      </div>
-
       <div className={styles.input}>
        <Search placeholder="Search by country name, continent or region" onChange={onInputChange} />
       </div>

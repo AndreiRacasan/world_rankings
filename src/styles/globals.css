@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
 :root {
-  --text-colour: #4d878b;
-  --text-secondary: #5c74a9;
+  --text-colour: #48cae4;
+  --text-secondary: #ffb703;
 
-  --main-colour: #4d878b;
+  --main-colour: #48cae4;
 
-  --bg-main: #e6ebe0;
+  --bg-main: #023e8a;
   --bg-dark: #eef3f6;
-  --bg-light: #fafafa;
+  --bg-light: #03045e;
 
   --font-family: 'Inter', sans-serif;
   --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);

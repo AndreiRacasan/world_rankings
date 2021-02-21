@@ -44,11 +44,13 @@
 
 .row {
   display: flex;
+  align-items: center;
   padding: 2rem;
   text-align: center;
   background-color: var(--bg-light);
   border-radius: 1rem;
   margin-bottom: 1rem;
+  border: 1px solid var(--text-colour);
   box-shadow: var(--box-shadow);
   font-weight: 500;
   transition: ease-in-out 0.2s;
@@ -78,7 +80,8 @@
 
 .flag {
   flex: 1;
-  margin-right: 0.7rem;
+  margin-right: 0.8rem;
+  margin-top: 0.2rem;
 }
 
 .flag img {

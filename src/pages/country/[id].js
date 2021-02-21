@@ -86,12 +86,12 @@ const Country = ({ country }) => {
 
             <div className={styles.details_panel_row}>
               <div className={styles.details_panel_label}>Gini</div>
-              <div className={styles.details_panel_value}>{country.gini} %</div>
+              <div className={styles.details_panel_value}>{country.gini || 0}%</div>
             </div>
 
             <div className={styles.details_panel_borders}>
               <div className={styles.details_panel_borders_label}>
-                Neighbouring Countries
+                {borders.length > 0 ? `Neighbouring Countries` : `${country.name} has no neighbouring countries`}
               </div>
 
               <div className={styles.details_panel_borders_container}>
